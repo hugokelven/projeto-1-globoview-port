@@ -1,0 +1,140 @@
+@media (max-width: 600px) {
+  div {
+    width: 100%; /* Somente em telas menores que 600px, a largura passará a ser 100%*/
+  }
+
+  .conteudo-pag {
+    width: 95%;
+    margin: 0 15px 0 15px;
+  }
+  .logo img {
+    content: url("imgs/globo-celular.png"); /*muda a source da imagem da logo*/
+  }
+  /*desabilita algumas páginas da barra*/
+  .barra-paginas :nth-child(2) {
+    display: none;
+  }
+  .barra-paginas :nth-child(3) {
+    display: none;
+  }
+  .barra-paginas :nth-child(5) {
+    display: none;
+  }
+  .barra-paginas :nth-child(6) {
+    display: none;
+  }
+  .barra-paginas :nth-child(7) {
+    display: none;
+  }
+  /*-----------------------------------*/
+  .materias-mais-relevantes {
+    width: 95%;
+  }
+  .materias-mais-relevantes h1 {
+    font-size: 32px;
+  }
+  .materias-mais-relevantes p {
+    font-weight: bold;
+  }
+  .caixa-not-esq p {
+    color: #cd150b;
+  }
+  .caixa-not-esq h2 {
+    color: #cd150b;
+  }
+  .sub-caixa-esq-1 {
+    flex-direction: column;
+  }
+  .sub-caixa-esq-1 h2 {
+    font-size: 18px;
+    width: 160px;
+    height: 45px;
+    /*trunca os textos com mais de três linhas e coloca reticências*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*-------------------------------*/
+  }
+  .sub-caixa-esq-1 p {
+    display: none;
+  }
+  .sub-caixa-esq-1 img {
+    width: 120px;
+    height: 67px;
+    margin-right: 5px;
+  }
+  .sub-caixa-esq-2 {
+    width: 95%;
+    flex-direction: column;
+  }
+  .sub-caixa-esq-2 p {
+    display: none;
+  }
+  .noticias-tipo-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*inverte a ordem entre h2 e h3 para que h2 possa ficar ao lado da imagem*/
+  .noticias-tipo-1 :nth-child(1) {
+    order: 1;
+  }
+  .noticias-tipo-1 :nth-child(2) {
+    order: 2;
+  }
+  .noticias-tipo-1 :nth-child(3) {
+    order: 1;
+  }
+  /*------------------------------------*/
+  .sub-caixa-esq-2 .noticias-tipo-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .caixa-not-dir h2 {
+    font-size: 18px;
+    width: 160px;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .caixa-not-dir p {
+    display: none;
+  }
+  .coluna-dir-1 img {
+    width: 120px;
+    height: 67px;
+    margin-right: 5px;
+  }
+  .coluna-dir-1 h2 {
+    color: #06aa48;
+  }
+  .coluna-dir-2 img {
+    width: 120px;
+    height: 67px;
+    margin-right: 5px;
+  }
+  .coluna-dir-2 h2 {
+    color: #ff8203;
+  }
+  .noticias-tipo-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .noticias-tipo-2 :nth-child(1) {
+    order: 1;
+  }
+  .noticias-tipo-2 :nth-child(2) {
+    order: 2;
+  }
+  .noticias-tipo-2 :nth-child(3) {
+    order: 1;
+  }
+}
